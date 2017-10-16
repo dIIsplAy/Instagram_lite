@@ -1,0 +1,48 @@
+{
+    "User": [{
+            "id": 1,
+            "username": "toto",
+            "password": "toto"
+        },
+        {
+            "id": 2,
+            "username": "tata",
+            "password": "tata"
+        },
+        {
+            "id": 3,
+            "username": "titi",
+            "password": "titi"
+        },
+        {
+            "id": 4,
+            "username": "tutu",
+            "password": "tutu"
+        }
+    ],
+
+    "Picture": [{
+
+            "id": 4,
+            "description": "un mignon petit chat",
+            "link": "http://ikonal.com/wp-content/uploads/2011/06/100-chats-1662099.jpg",
+            "like": "323",
+            "owner": "3"
+        },
+        {
+            "id": 1,
+            "description": "une mignone petit chate",
+            "link": "http://www.chaton0.com/chat-mignon/petit-chat-mignon-2.jpg",
+            "like": "387",
+            "owner": "1"
+        },
+        {
+            "id": 2,
+            "description": "un mignon petit panda roux",
+            "link": "https://www.quizz.biz/uploads/quizz/796095/6_Grt93.jpg",
+            "like": "999",
+            "owner": "2"
+        }
+    ]
+
+}
