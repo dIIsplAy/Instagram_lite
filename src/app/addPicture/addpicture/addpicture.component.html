@@ -1,0 +1,14 @@
+<h2>
+    Create your Post</h2>
+<form>
+    <label>Description</label>
+    <input type="text" [(ngModel)]="newPicture.description" name="description" />
+    <!-- <label>Owner</label>
+    <input type="number" [(ngModel)]="newPicture.owner" name="owner" /> -->
+    <label>Link</label>
+    <input type="text" [(ngModel)]="newPicture.link" name="link" />
+    <label>Like</label>
+    <input type="number" [(ngModel)]="newPicture.like" name="like" />
+
+    <button (click)="ajouter()">SEND</button>
+</form>

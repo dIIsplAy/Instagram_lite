@@ -12,10 +12,13 @@ export class PictureService {
 
 
 
-  getAllUser():Observable<Picture[]> {
+  getAllPicture():Observable<Picture[]> {
     return this.http.get<Picture[]>(this.urlAPI);
   }
-  getChienById(id:number):Observable<Picture>{
+  getPictureById(id:number):Observable<Picture>{
     return this.http.get<Picture>(this.urlAPI+"/"+id);
+  }
+  addPicture(picture:Picture): Observable<Picture> {
+    return this.http.post<Picture>(this.urlAPI, picture);
   }
 }

@@ -1,0 +1,10 @@
+<h2>
+    Create your User</h2>
+<form>
+    <label>Username</label>
+    <input type="text" [(ngModel)]="newUser.username" name="username" />
+    <label>Password</label>
+    <input type="text" [(ngModel)]="newUser.password" name="password" />
+
+    <button (click)="ajouter()">SEND</button>
+</form>

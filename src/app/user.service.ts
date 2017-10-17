@@ -14,8 +14,11 @@ export class UserService {
   getAllUser():Observable<User[]> {
     return this.http.get<User[]>(this.urlAPI);
   }
-  getChienById(id:number):Observable<User>{
+  getUserById(id:number):Observable<User>{
     return this.http.get<User>(this.urlAPI+"/"+id);
+  }
+  addUser(user:User): Observable<User> {
+    return this.http.post<User>(this.urlAPI, user);
   }
 
 }
