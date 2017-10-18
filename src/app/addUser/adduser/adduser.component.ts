@@ -26,7 +26,7 @@ export class AdduserComponent implements OnInit {
   }
 
   ajouter(){
-    console.log('ga');
+    console.log('ga' +this.newUser);
     this.eventAjouter.emit(this.newUser);
   }
 

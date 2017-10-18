@@ -1,14 +1,17 @@
 <h2>
     Create your Post</h2>
 <form>
-    <label>Description</label>
-    <input type="text" [(ngModel)]="newPicture.description" name="description" />
+    <div class="form-group">
+        <label>Description</label>
+        <input class="form-control" type="text" [(ngModel)]="newPicture.description" name="description" />
+    </div>
     <!-- <label>Owner</label>
     <input type="number" [(ngModel)]="newPicture.owner" name="owner" /> -->
     <label>Link</label>
     <input type="text" [(ngModel)]="newPicture.link" name="link" />
     <label>Like</label>
-    <input type="number" [(ngModel)]="newPicture.like" name="like" />
-
-    <button (click)="ajouter()">SEND</button>
+    <!-- <input type="number" [(ngModel)]="Contant" name="like" /> -->
+    <div class="col-md-2 col-offset-10">
+        <button class="btn btn-block btn-lg btn-success" (click)="ajouter()">SEND</button>
+    </div>
 </form>

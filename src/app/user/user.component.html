@@ -1,10 +1,2 @@
-<tbody>
-    <h1>Liste User</h1>
-    <tr *ngFor="let user of listeUser">
-
-        <td>{{user.id}}</td>
-
-        <td>{{user.username}}</td>
-    </tr>
-</tbody>
-<app-adduser (onAdd)="ajouter($event)"></app-adduser>
+<app-adduser (onAdd)="ajouter($event)">
+</app-adduser>

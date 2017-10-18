@@ -23,11 +23,13 @@ export class AddpictureComponent implements OnInit {
       owner:null
     } 
   }
+  // Contant = 0;
 
   ngOnInit() {
   }
   ajouter(){
     console.log('ga');
+    // this.newPicture.like.push(this.Contant);
     this.eventAjouter.emit(this.newPicture);
   }
   

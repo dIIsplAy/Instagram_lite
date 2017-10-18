@@ -33,21 +33,21 @@
     {
       "description": "un mignon petit chien",
       "link": "http://img1.gtsstatic.com/chien/le-chien-le-plus-mignon-du-monde-sort-un-livre_53169_w696.jpg",
-      "like": 3,
+      "like": [],
       "owner": null,
       "id": 7
     },
     {
       "description": "un mignon petit chien",
       "link": "http://img1.gtsstatic.com/chien/le-chien-le-plus-mignon-du-monde-sort-un-livre_53169_w696.jpg",
-      "like": 5,
+      "like": [],
       "owner": null,
       "id": 8
     },
     {
       "description": "un mignon petit chien",
       "link": "http://img1.gtsstatic.com/chien/le-chien-le-plus-mignon-du-monde-sort-un-livre_53169_w696.jpg",
-      "like": 5,
+      "like": [],
       "owner": null,
       "id": 9
     },
@@ -59,16 +59,31 @@
     {
       "description": "un mignon petit chien",
       "link": "http://img1.gtsstatic.com/chien/le-chien-le-plus-mignon-du-monde-sort-un-livre_53169_w696.jpg",
-      "like": 2,
+      "like": [],
       "owner": null,
       "id": 11
     },
     {
       "description": "un mignon petit chien",
       "link": "http://img1.gtsstatic.com/chien/le-chien-le-plus-mignon-du-monde-sort-un-livre_53169_w696.jpg",
-      "like": 3,
+      "like": [],
       "owner": null,
       "id": 12
+    },
+    {
+      "username": "tes",
+      "password": "test",
+      "id": 13
+    },
+    {
+      "username": "test",
+      "password": "test",
+      "id": 14
+    },
+    {
+      "username": "cyrille",
+      "password": "mesaoul",
+      "id": 15
     }
   ],
   "Picture": [
@@ -76,36 +91,157 @@
       "id": 4,
       "description": "un mignon petit chat",
       "link": "http://ikonal.com/wp-content/uploads/2011/06/100-chats-1662099.jpg",
-      "like": "323",
+      "like": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        1,
+        14,
+        13,
+        15
+      ],
       "owner": "3"
     },
     {
       "id": 1,
       "description": "une mignone petit chate",
       "link": "http://www.chaton0.com/chat-mignon/petit-chat-mignon-2.jpg",
-      "like": "387",
+      "like": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        13,
+        15
+      ],
       "owner": "1"
     },
     {
       "id": 2,
       "description": "un mignon petit panda roux",
       "link": "https://www.quizz.biz/uploads/quizz/796095/6_Grt93.jpg",
-      "like": "999",
+      "like": [
+        10
+      ],
       "owner": "2"
     },
     {
       "description": "un mignon petit chien",
       "link": "http://img1.gtsstatic.com/chien/le-chien-le-plus-mignon-du-monde-sort-un-livre_53169_w696.jpg",
-      "like": 3,
+      "like": [
+        10,
+        13
+      ],
       "owner": null,
       "id": 5
     },
     {
       "description": "ce cochon est sexy",
       "link": "https://missboucle.files.wordpress.com/2013/04/sexy-swine.jpg",
-      "like": 3,
+      "like": [
+        10,
+        13
+      ],
       "owner": null,
       "id": 6
+    },
+    {
+      "description": "un mignon petit lapin",
+      "link": "http://img1.gtsstatic.com/chien/le-chien-le-plus-mignon-du-monde-sort-un-livre_53169_w696.jpg",
+      "like": [
+        10
+      ],
+      "owner": null,
+      "id": 7
+    },
+    {
+      "description": "un mignon petit lapin",
+      "link": "http://fotomelia.com/wp-content/uploads/edd/2015/02/petit-lapin-nain-1560x1040.jpg",
+      "like": [
+        10
+      ],
+      "owner": null,
+      "id": 8
+    },
+    {
+      "description": "un mignon petit chien",
+      "link": "https://www.bexley.fr/Bexley/image/chaussures-bateau-homme-bexley/BocaRaton-marron_fonce.jpeg",
+      "like": [
+        10,
+        15
+      ],
+      "owner": null,
+      "id": 9
+    },
+    {
+      "description": "un mignon petit chien",
+      "link": "http://img1.gtsstatic.com/chien/le-chien-le-plus-mignon-du-monde-sort-un-livre_53169_w696.jpg",
+      "like": [
+        10
+      ],
+      "owner": null,
+      "id": 10
+    },
+    {
+      "description": "axolots are sexy",
+      "link": "https://i.ytimg.com/vi/Eo50ctoOTWs/maxresdefault.jpg",
+      "like": [
+        10
+      ],
+      "owner": null,
+      "id": 11
+    },
+    {
+      "description": "",
+      "link": "",
+      "like": [],
+      "owner": null,
+      "id": 12
     }
   ]
 }

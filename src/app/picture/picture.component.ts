@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Picture } from '../shared/Picture';
 import { PictureService } from '../picture.service';
+import { AuthService } from '../shared/auth.service';
 
 @Component({
   selector: 'app-picture',
@@ -12,7 +13,7 @@ export class PictureComponent implements OnInit {
   listePicture:Picture[] = [];
   aModifier:Picture;
 
-  constructor(private pictureserv:PictureService) { }
+  constructor(private pictureserv:PictureService,  private auth:AuthService) { }
 
   ngOnInit() 
   {
@@ -24,5 +25,14 @@ export class PictureComponent implements OnInit {
     this.pictureserv.addPicture(picture)
     .subscribe((users) => this.listePicture.push(picture));
   }
+  like(pic:Picture){
+    if(!pic.like.find((like) => this.auth.getConect().id === like)){
+      this.pictureserv.likePicture(pic.id, this.auth.getConect().id).subscribe((Pic)=>{
+
+        this.ngOnInit();
+      })
+    }
+  }
+  
 
 }

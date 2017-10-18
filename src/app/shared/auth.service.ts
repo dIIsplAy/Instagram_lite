@@ -11,6 +11,11 @@ export class AuthService {
 
   constructor(private http:HttpClient) { }
 
+getConect(){
+  return this.user;
+
+}
+  
   login(username:string,password:string):Observable<boolean>{
 
 

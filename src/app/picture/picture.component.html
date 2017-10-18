@@ -1,12 +1,14 @@
-<tbody>
-    <h1>Liste photo</h1>
-    <tr *ngFor="let picture of listePicture">
-
-        <td>{{picture.id}}</td>
-        <td>{{picture.description}}</td>
+<div class="container">
+    <div class="col-md-8 col-offset-4">
+        <app-addpicture (onAdd)="ajouter($event)">
+        </app-addpicture>
+    </div>
+    <div class="col-md-8 col-offset-4">
+        <h1>Liste photo</h1>
+    </div>
+    <div class="col-md-8 col-offset-4" *ngFor="let picture of listePicture">
+        <p>{{picture.description}}</p>
         <img src="{{picture.link}}" style="height:300px">
-        <td>{{picture.owner}}</td>
-        <td>{{picture.like}}</td>
-    </tr>
-</tbody>
-<app-addpicture (onAdd)="ajouter($event)"></app-addpicture>
+        <button (click)="like(picture)"><span class="fui-heart"></span><td *ngIf="picture.like">{{picture.like.length}}</td></button>
+    </div>
+</div>
