@@ -1,0 +1,36 @@
+h1 {
+    font-size: 3em;
+}
+
+span {
+    position: absolute;
+    top: 0;
+    left: 2;
+    color: #3498DB;
+}
+
+td {
+    color: #34495E;
+    font-size: 15px;
+}
+
+button {
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #34495E;
+}
+
+p {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    color: #34495E;
+    border: 1px solid #34495E;
+}
+
+.pic {
+    margin-bottom: 20px;
+}

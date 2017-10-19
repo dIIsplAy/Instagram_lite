@@ -1,14 +1,19 @@
 <div class="container">
-    <div class="col-md-8 col-offset-4">
-        <app-addpicture (onAdd)="ajouter($event)">
-        </app-addpicture>
+    <div class="container-fluid">
+        <div class="col-md-8 col-md-offset-2">
+            <app-addpicture (onAdd)="ajouter($event)">
+            </app-addpicture>
+        </div>
     </div>
-    <div class="col-md-8 col-offset-4">
-        <h1>Liste photo</h1>
+    <div class="col-md-8 col-md-offset-4">
+        <h1>Picture List</h1>
     </div>
-    <div class="col-md-8 col-offset-4" *ngFor="let picture of listePicture">
-        <p>{{picture.description}}</p>
-        <img src="{{picture.link}}" style="height:300px">
-        <button (click)="like(picture)"><span class="fui-heart"></span><td *ngIf="picture.like">{{picture.like.length}}</td></button>
+    <div class="container-fluid">
+        <div class="pic col-md-4" *ngFor="let picture of listePicture">
+            <img src="{{picture.link}}" style="height:320px; width:350px">
+            <span class="fui-photo"></span>
+            <p class="col-md-11">{{picture.description}}</p>
+            <button class="col-md-2 btn btn-sm btn-default" (click)="like(picture)"><span class="fui-heart"></span><td *ngIf="picture.like">{{picture.like.length}}</td></button>
+        </div>
     </div>
 </div>
