@@ -14,6 +14,7 @@ import { PictureService } from './picture.service';
 import { AddpictureComponent } from './addPicture/addpicture/addpicture.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
+import { HomepageComponent } from './Homepage/homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { appRoutes } from './app.routes';
     PictureComponent,
     LoginComponent,
     AdduserComponent,
-    AddpictureComponent
+    AddpictureComponent,
+    HomepageComponent
     
 
   ],

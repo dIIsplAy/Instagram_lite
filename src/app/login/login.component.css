@@ -1,0 +1,10 @@
+label {
+    font-size: 1em;
+    color: #3498DB;
+}
+
+button {
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: #3498DB;
+}

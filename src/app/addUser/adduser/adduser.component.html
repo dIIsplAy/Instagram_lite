@@ -1,14 +1,40 @@
-<div class="col-md-8 col-offset-2">
-
+<!-- <div class="col-md-6 col-md-offset-3">
     <h2>
         Create your User</h2>
+</div>
+<div class="container-fluid">
     <form>
-        <label>Username</label>
-        <input type="text" [(ngModel)]="newUser.username" name="username" />
-        <label>Password</label>
-        <input type="text" [(ngModel)]="newUser.password" name="password" />
+        <div class="form-group col-md-4 col-md-offset-4">
+            <label>Username</label>
+            <input class="form-control" type="text" [(ngModel)]="newUser.username" name="username" />
+        </div>
+        <div class="form-group col-md-4 col-md-offset-4">
+            <label>Password</label>
+            <input class="form-control" type="text" [(ngModel)]="newUser.password" name="password" />
+        </div>
+        <div class="col-md-1 col-md-offset-6">
+            <button class="btn btn-block btn-lg btn-success" (click)="ajouter()">SEND</button>
+        </div>
+    </form>
+</div> -->
 
-        <button class="btn btn-block btn-lg btn-success" (click)="ajouter()">SEND</button>
+<div class="col-md-4 col-md-offset-4">
+    <h2>
+        Create your User</h2>
+</div>
+<div class="container-fluid">
+    <form>
+        <div class="form-group col-md-4 col-md-offset-4">
+            <label>Username</label>
+            <input class="form-control" type="text" [(ngModel)]="newUser.username" name="username" />
+        </div>
+        <div class="col-md-4 col-md-offset-4 ">
+            <label>Password</label>
+            <input class="form-control" type="text" [(ngModel)]="newUser.password" name="password" />
+        </div>
+        <div class="col-md-1 col-md-offset-7">
+            <button class="btn btn-block btn-lg btn-success" (click)="ajouter()">SEND</button>
+        </div>
 
     </form>
 </div>

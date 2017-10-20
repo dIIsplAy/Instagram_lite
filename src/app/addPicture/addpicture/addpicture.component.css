@@ -1,10 +1,19 @@
 label {
     font-size: 1em;
-    color: #3498DB;
+    color: whitesmoke;
+}
+
+h2 {
+    color: white;
 }
 
 button {
-    margin-top: 20px;
+    color: #34495e;
+    margin-top: 10px;
     margin-left: 10px;
-    background-color: #3498DB;
+    background-color: whitesmoke;
+}
+
+#use {
+    background-color: #34495e
 }

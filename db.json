@@ -94,6 +94,11 @@
       "username": "justin",
       "password": "justin",
       "id": 17
+    },
+    {
+      "username": "yasuo",
+      "password": "hasagi",
+      "id": 18
     }
   ],
   "Picture": [
@@ -153,7 +158,8 @@
         14,
         13,
         15,
-        16
+        16,
+        18
       ],
       "owner": "3"
     },
@@ -170,7 +176,8 @@
         13,
         15,
         16,
-        17
+        17,
+        18
       ],
       "owner": "1"
     },
@@ -180,7 +187,8 @@
       "link": "https://www.quizz.biz/uploads/quizz/796095/6_Grt93.jpg",
       "like": [
         10,
-        16
+        16,
+        18
       ],
       "owner": "2"
     },
