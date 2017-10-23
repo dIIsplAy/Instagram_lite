@@ -11,23 +11,27 @@
             <li><a routerLink="/user">Register<span class="navbar-unread">1</span></a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a routerLink="/login">Login<span class="navbar-unread">1</span></a></li>
+
+            <li class="username" *ngIf=" (currentUser | async) "> {{(currentUser | async).username}}</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right ">
+            <li *ngIf="(currentUser | async)===null "><a routerLink="/login">Login<span class="navbar-unread ">1</span></a></li>
         </ul>
     </div>
 </nav>
 <router-outlet>
 </router-outlet>
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css " rel="stylesheet ">
 
-<div class="footer">
-    <div class="container">
-        <a href='#'><i class="fa fa-twitch fa-3x fa-fw"></i></a>
-        <a href='#'><i class="fa fa-facebook fa-3x fa-fw"></i></a>
-        <a href='#'><i class="fa fa-twitter fa-3x fa-fw"></i></a>
-        <a href='#'><i class="fa fa-youtube-play fa-3x fa-fw"></i></a>
-        <a href='#'><i class="fa fa-rss fa-3x fa-fw"></i></a>
-        <a href='#'><i class="fa fa-vine fa-3x fa-fw"></i></a>
-        <a href='#'><i class="fa fa-flickr fa-3x fa-fw"></i></a>
-        <a href='#'><i class="fa fa-linkedin fa-3x fa-fw"></i></a>
+<div class="footer ">
+    <div class="container ">
+        <a href='#'><i class="fa fa-twitch fa-3x fa-fw "></i></a>
+        <a href='#'><i class="fa fa-facebook fa-3x fa-fw "></i></a>
+        <a href='#'><i class="fa fa-twitter fa-3x fa-fw "></i></a>
+        <a href='#'><i class="fa fa-youtube-play fa-3x fa-fw "></i></a>
+        <a href='#'><i class="fa fa-rss fa-3x fa-fw "></i></a>
+        <a href='#'><i class="fa fa-vine fa-3x fa-fw "></i></a>
+        <a href='#'><i class="fa fa-flickr fa-3x fa-fw "></i></a>
+        <a href='#'><i class="fa fa-linkedin fa-3x fa-fw "></i></a>
     </div>
 </div>

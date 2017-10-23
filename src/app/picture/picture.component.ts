@@ -26,13 +26,23 @@ export class PictureComponent implements OnInit {
     .subscribe((users) => this.listePicture.push(picture));
   }
   like(pic:Picture){
-    if(!pic.like.find((like) => this.auth.getConect().id === like)){
-      this.pictureserv.likePicture(pic.id, this.auth.getConect().id).subscribe((Pic)=>{
+    this.auth.getConect().subscribe((user)=>{
+      if(!pic.like.find((like) => user.id === like)){
+        this.pictureserv.likePicture(pic.id, user.id).subscribe((Pic)=>{
+  
+          this.ngOnInit();
+          })
+      }
 
-        this.ngOnInit();
-      })
-    }
+    })
   }
+    // if(!pic.like.find((like) => this.auth.getConect().id === like)){
+    //   this.pictureserv.likePicture(pic.id, this.auth.getConect().id).subscribe((Pic)=>{
+
+    //     this.ngOnInit();
+    //   })
+    // }
+  // }
   
 
 }

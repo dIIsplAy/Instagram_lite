@@ -24,7 +24,8 @@ import { HomepageComponent } from './Homepage/homepage/homepage.component';
     LoginComponent,
     AdduserComponent,
     AddpictureComponent,
-    HomepageComponent
+    HomepageComponent,
+
     
 
   ],
