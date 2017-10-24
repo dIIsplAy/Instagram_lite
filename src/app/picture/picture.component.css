@@ -38,3 +38,7 @@ p {
 #color {
     background-color: #34495E;
 }
+
+img {
+    box-shadow: 0px 0px 12px #9CA4AB;
+}

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { User } from '../../shared/User';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-adduser',
@@ -13,7 +14,7 @@ export class AdduserComponent implements OnInit {
   @Output("onAdd")
   eventAjouter:EventEmitter<User> = new EventEmitter();
 
-  constructor() { 
+  constructor(private router:Router) { 
 
       this.newUser = {
       username:'',
@@ -28,6 +29,7 @@ export class AdduserComponent implements OnInit {
   ajouter(){
     console.log('ga' +this.newUser);
     this.eventAjouter.emit(this.newUser);
+    this.router.navigate(["/login"]);
   }
 
 }

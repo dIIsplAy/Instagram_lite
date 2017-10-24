@@ -9,20 +9,23 @@
         <ul class="nav navbar-nav navbar-left">
             <li><a routerLink="/picture">Picture<span class="navbar-unread">1</span></a></li>
             <li><a routerLink="/user">Register<span class="navbar-unread">1</span></a></li>
+            <li><a *ngIf="currentUser | async" (click)="logout()">Logout</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-
             <li class="username" *ngIf=" (currentUser | async) "> {{(currentUser | async).username}}</li>
         </ul>
         <ul class="nav navbar-nav navbar-right ">
+
             <li *ngIf="(currentUser | async)===null "><a routerLink="/login">Login<span class="navbar-unread ">1</span></a></li>
         </ul>
     </div>
 </nav>
 <router-outlet>
 </router-outlet>
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css " rel="stylesheet ">
+<div id="complete">
 
+</div>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css " rel="stylesheet ">
 <div class="footer ">
     <div class="container ">
         <a href='#'><i class="fa fa-twitch fa-3x fa-fw "></i></a>

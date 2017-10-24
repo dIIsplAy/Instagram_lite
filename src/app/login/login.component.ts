@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../shared/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,13 +12,16 @@ export class LoginComponent implements OnInit {
   password:string;
   connected:boolean = false;
 
-  constructor(private auth:AuthService) { }
+  constructor(private router:Router ,private auth:AuthService) { }
 
   ngOnInit() {
   }
 login(){
 this.auth.login(this.username, this.password).subscribe
-(logged => this.connected = logged);
+(logged => 
+{if(logged) {
+  this.router.navigate(["/picture"]);
+}});
 }
 
 logout(){

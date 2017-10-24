@@ -8,3 +8,16 @@ button {
     margin-left: 10px;
     background-color: #3498DB;
 }
+
+.logout {
+    top: 0;
+    right: 100%;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.welcom {
+    top: 2em;
+}

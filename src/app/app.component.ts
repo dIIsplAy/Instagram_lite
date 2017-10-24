@@ -11,11 +11,17 @@ import { User } from './shared/User';
 export class AppComponent {
   currentUser:Observable<User>;
   title = 'app';
+
   constructor(private auth:AuthService){}
 
 
 
   ngOnInit(): void {
 this.currentUser = this.auth.user
+
+}
+logout(){
+  this.auth.logout();
+
 }
 }
